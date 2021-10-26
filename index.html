@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  </head>
+<body>
+    <button onclick="questionOfTheDay()">Click Here</button>
+    <h3 id="qotd">&nbsp;</h3>
+
+<p id="gamer"></p>
+
+<!--This applies to the button asking the button asking the question-->
+<!-- <script>
+myFunction();
+function myFunction() {
+  let text;
+  let person = prompt("Please enter your name:", "Gamer");
+  if (person == null || person == "") {
+    text = "User cancelled the prompt.";
+  } else {
+    text = "Hello " + person + "! How is your day going?";
+  }
+  document.getElementById("gamer").innerHTML = text;
+}
+</script> -->
+    <div class="main">
+        <center><h1>What Should I Do Next?</h1>
+        <h6>Use this page to figure out what to do next in class</h6></center>
+
+
+    <script>
+
+      
+
+        function questionOfTheDay(){
+        let myFirstArray = ["Question 1", "Question 2", "Question 3", "Question 4", "Question 5", "Question 6", "Question 7", "Question 8", "Question 9", "Question 10"]
+        // for(var i = 0; i< myFirstArray.length;i++){
+        //         alert(myFirstArray[i]);
+        // }
+
+        document.getElementById("qotd").innerText = ("Question of the Day: " + myFirstArray[Math.floor(Math.random() * myFirstArray.length)] )
+        
+        
+    }
+    </script>
+    </div>
+
+    <div class="buttons">
+ 
+      <img id="grades" src="Images/Grades.png">
+      <img id ="question" src="Images/Cookie's Corner Question of the Day.png">  
+      <img id="question2" src="Images/Cookie's Corner Question of the Day3.png">
+      <img id="calculator" src="Images/Calculate.png">
+    </div>
+<!--Footer will include how are you feeling today?-->
+    <div class="footer">
+
+      <p>How are you feeling today?</p>
+      <i class="material-icons" style="color: rgb(97, 9, 9)">sentiment_very_dissatisfied</i>
+      <i class="material-icons" style="color: rgb(170, 19, 19)">sentiment_dissatisfied</i>
+      <i class="material-icons" style="color: yellow">sentiment_neutral</i>
+      <i class="material-icons" style="color: rgb(6, 204, 6)">sentiment_satisfied</i>
+      <i class="material-icons" style="color: green">sentiment_very_satisfied</i>
+      <br><br>
+    </div>
+</body>
+</html>
