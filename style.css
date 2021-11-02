@@ -5,9 +5,15 @@ body{
     display: flex;
     flex-direction: column;
 }
-.buttons > img{
+.buttons > div{
         height: 200px;
         width: 200px;
+}
+.buttons > div > img {
+    height: 100%
+}
+.menu{
+    padding: 5px;
 }
 .footer {
     text-align: center;
@@ -26,7 +32,7 @@ body{
         flex-direction: row;
         justify-content: center;
     }
-    .buttons > img{
+    .buttons > div{
         height: 350px;
         width: 350px;
     }
