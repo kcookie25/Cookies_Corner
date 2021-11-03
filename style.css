@@ -18,6 +18,10 @@ body{
 .footer {
     text-align: center;
 }
+
+.material-icons:nth-child(even){;
+    transform: rotate(180deg)
+}
 @media only screen and (min-width: 720px){
     .buttons{
         display: grid;
