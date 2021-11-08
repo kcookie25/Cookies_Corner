@@ -22,35 +22,41 @@
       <div class="menu">
         <!--NEED TO DO LATER: Seperate image from div-->
           <input type= "image" id="image" src="Images/Feeling Post It.png">
-          <center><p>How are you feeling today?</p>
-          <i class="material-icons" style="color: rgb(97, 9, 9)">sentiment_very_dissatisfied</i>
-          <i class="material-icons" style="color: rgb(170, 19, 19)">sentiment_dissatisfied</i>
-          <i class="material-icons" style="color: yellow">sentiment_neutral</i>
-          <i class="material-icons" style="color: rgb(6, 204, 6)">sentiment_satisfied</i>
-          <i class="material-icons" style="color: green">sentiment_very_satisfied</i>
-          <br><br>
-          </center>
+          <div class="emoji">
+            <center><p>How are you feeling today?</p>
+            <i class="material-icons" style="color: rgb(97, 9, 9)">sentiment_very_dissatisfied</i>
+            <i class="material-icons" style="color: rgb(170, 19, 19)">sentiment_dissatisfied</i>
+            <i class="material-icons" style="color: yellow">sentiment_neutral</i>
+            <i class="material-icons" style="color: rgb(6, 204, 6)">sentiment_satisfied</i>
+            <i class="material-icons" style="color: green">sentiment_very_satisfied</i>
+            <br><br>
+            </center>
+          </div>
       </div>
 
+      <!--POWERSCHOOL - Check for missing assignments-->
       <div class="menu">
         <!--This LINK is changing my image settings, and I don't know why?!?!?-->
-        <!--<a href="https://pschool.gcs.k12.in.us/public/" target="_blank">-->
+        <a href="https://pschool.gcs.k12.in.us/public/" target="_blank">
           <img src="Images/Powerschool Post It.png">
-        <!--</a>-->
+        </a>
       </div>
       
+      <!--GRADE CHECK - Check for current grade, based on percentage-->
       <div class="menu">
         <img id="question2" src="Images/Grade Check Post It.png">
-        
-        <center><br>
-          <p>Want to know what your current grade is? Enter the current percentage, and I will tell you what grade you have.....</p>
-        <input type="text" id="gradeNumber">
-        <span id="gradeScale"></span>
-        <br>
-        <button onclick="calculateGrade()">What is my grade?</button>
-        </center>
+          <div class="Calculator">
+            <center><br>
+              <p>Want to know what your current grade is? Enter the current percentage, and I will tell you what grade you have.....</p>
+            <input type="text" id="gradeNumber">
+            <span id="gradeScale"></span>
+            <br>
+            <button onclick="calculateGrade()">What is my grade?</button>
+            </center>
+          </div>
       </div>
 
+      <!--WHAT'S NEXT? Random ideas for what to do next-->
       <div class="menu">
         <img id="calculator" src="Images/What Next Post It.png">
         <br>
@@ -63,16 +69,34 @@
         </center>
       </div>
     </div>
+
+<!--CHAT BOT - Chat with teacher-->
+    <div class="chat-popup" id="myForm">
+      <form action="/action_page.php" class="form-container">
+        <h1>Cookie Chat</h1>
+    
+        <label for="msg"><b>Message</b></label>
+        <textarea placeholder="Hi Mrs. Cook! I have some questions....." name="msg" required></textarea>
+    
+        <button type="submit" class="btn">Send</button>
+        <button type="button" class="btn close" onclick="closeForm()">Close</button>
+      </form>
+    </div>
   <!--Question of the Day script-->
   <script>     
 
       function questionOfTheDay(){
-      let myFirstArray = ["Question 1", "Question 2", "Question 3", "Question 4", "Question 5", "Question 6", "Question 7", "Question 8", "Question 9", "Question 10"]
+      let myFirstArray = ["Email a teacher from elementary school, and thank them for all the hard work they did to help you be the person you are today", 
+      "Ask your teacher if they need help with anything around the classroom", 
+      "Check and see if another student in the class needs help with a subject you are strong in", 
+      "Go to CodeHS, and create a new program in the Sandbox", 
+      "Find a recipe, and offer to cook for your parents tonight (No, something other than hotdogs and peanut butter and jelly!)", 
+      "Question 6", "Question 7", "Question 8", "Question 9", "Question 10"]
       // for(var i = 0; i< myFirstArray.length;i++){
       //         alert(myFirstArray[i]);
       // }
 
-      document.getElementById("qotd").innerText = ("Question of the Day: " + myFirstArray[Math.floor(Math.random() * myFirstArray.length)] )
+      document.getElementById("qotd").innerText = ("Try this.... " + myFirstArray[Math.floor(Math.random() * myFirstArray.length)] )
       
       
   }
@@ -100,6 +124,15 @@ document.getElementById("gradeScale").innerHTML = finalGreeting;
 }
 </script>
 
+<script>
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+</script>
 <!--This applies to the button asking the button asking the question-->
 <!-- <script>
 myFunction();
