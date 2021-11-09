@@ -14,7 +14,7 @@ body{
 }
 .text{
     background-color: white;
-    width: 100%;
+    width: 75%;
     height: 50px;
 }
 .menu{
@@ -24,8 +24,8 @@ body{
     text-align: center;
 }
 
-.material-icons:nth-child(even){;
-    transform: rotate(180deg)
+.material-icons:nth-child(even){
+    transform: rotate(180deg);
 }
 
 #banner{
@@ -34,22 +34,20 @@ body{
 
 *{box-sizing: border-box;}
 
-/* Button used to open the chat form - fixed at the bottom of the page */
-.open-button {
-  background-color: #555;
-  color: white;
-  padding: 16px 20px;
-  border: none;
-  cursor: pointer;
-  opacity: 0.8;
-  position: fixed;
-  bottom: 23px;
-  right: 28px;
-  width: 280px;
-}
+.button-open {
+    background-color: #555;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    position: fixed;
+    bottom: 25px;
+    right: 30px;
+    width: 200px;
+  }
 
-/* The popup chat - hidden by default */
-.form-popup {
+.chat {
   display: none;
   position: fixed;
   bottom: 0;
@@ -58,11 +56,11 @@ body{
   z-index: 9;
 }
 
-/* Add styles to the form container */
 .form-container {
   max-width: 225px;
   padding: 15px;
   background-color: #f7f4c5;
+  border: 2px ridge white;
 }
 
 /* Full-width textarea */
@@ -72,7 +70,6 @@ body{
   margin: 5px 0 20px 0;
   border: none;
   background: white;
-  resize: none;
   min-height: 100px;
 }
 
@@ -83,7 +80,7 @@ body{
 }
 
 /* Set a style for the submit/login button */
-.form-container .btn {
+.form-container .button {
   background-color: #85963b;
   color: white;
   padding: 16px 20px;
@@ -95,13 +92,16 @@ body{
 }
 
 /* Add a red background color to the cancel button */
-.form-container .close {
+.form-container .button-close {
   background-color: #ff1616;
 }
 
 /* Add some hover effects to buttons */
-.form-container .btn:hover, .open-button:hover {
+.form-container .button-send:hover, .button-open:hover {
   opacity: 1;
+}
+#cookie-chat{
+  font-family:cursive;
 }
 
 @media only screen and (min-width: 720px){

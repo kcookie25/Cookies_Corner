@@ -13,9 +13,10 @@
     <div class="main">
         <center><img id="banner" src="Images/Cookie's Corner 2.png">
         <div class="text">
-          <h3>Are you in room B210 right now? You say you have nothing to do, right? I beg to differ! Check out what you <u>SHOULD</u> be doing!</h5></center>
+          <h2>Are you in room B210 right now? You say you have nothing to do, right? I beg to differ! Check out what you <u>SHOULD</u> be doing!</h5></center>
         </div>
     </div>
+    <br>
 
     <div class="buttons">
  
@@ -71,83 +72,22 @@
     </div>
 
 <!--CHAT BOT - Chat with teacher-->
-    <div class="chat-popup" id="myForm">
+<button class="button-open" onclick="openForm()">Chat</button>
+    <div class="chat" id="cookieChat">
       <form action="/action_page.php" class="form-container">
-        <h1>Cookie Chat</h1>
-    
-        <label for="msg"><b>Message</b></label>
+        <h1 id="cookie-chat">Cookie Chat</h1>
+        <img src="Images/cookies_corner2.png" height="75px">
+        <br>
+        <br>
+        <label for="msg"><b>Chat Here</b></label>
         <textarea placeholder="Hi Mrs. Cook! I have some questions....." name="msg" required></textarea>
     
-        <button type="submit" class="btn">Send</button>
-        <button type="button" class="btn close" onclick="closeForm()">Close</button>
+        <button type="submit" class="button">Send</button>
+        <button type="button" class="button button-close" onclick="closeForm()">Close</button>
       </form>
     </div>
   <!--Question of the Day script-->
-  <script>     
-
-      function questionOfTheDay(){
-      let myFirstArray = ["Email a teacher from elementary school, and thank them for all the hard work they did to help you be the person you are today", 
-      "Ask your teacher if they need help with anything around the classroom", 
-      "Check and see if another student in the class needs help with a subject you are strong in", 
-      "Go to CodeHS, and create a new program in the Sandbox", 
-      "Find a recipe, and offer to cook for your parents tonight (No, something other than hotdogs and peanut butter and jelly!)", 
-      "Question 6", "Question 7", "Question 8", "Question 9", "Question 10"]
-      // for(var i = 0; i< myFirstArray.length;i++){
-      //         alert(myFirstArray[i]);
-      // }
-
-      document.getElementById("qotd").innerText = ("Try this.... " + myFirstArray[Math.floor(Math.random() * myFirstArray.length)] )
-      
-      
-  }
-  </script>
-
-  <!--GRADE SCALE -->
-  <script>
-function calculateGrade(){
-let grade= document.getElementById("gradeNumber").value;
-let finalGreeting;
-
-if (grade > 89) {
-  finalGreeting = "You get an A";
-} else if (grade > 79 && grade < 90) {
-  finalGreeting = "You get a B!";
-} else if (grade > 69 && grade < 80) {
-  finalGreeting = "You get a C!";
-} else if (grade > 59 && grade < 70) {
-  finalGreeting = "You get a D!";
-} else {
-  finalGreeting = "You get an F!"
-}
-
-document.getElementById("gradeScale").innerHTML = finalGreeting;
-}
-</script>
-
-<script>
-function openForm() {
-  document.getElementById("myForm").style.display = "block";
-}
-
-function closeForm() {
-  document.getElementById("myForm").style.display = "none";
-}
-</script>
-<!--This applies to the button asking the button asking the question-->
-<!-- <script>
-myFunction();
-function myFunction() {
-  let text;
-  let person = prompt("Please enter your name:", "Gamer");
-  if (person == null || person == "") {
-    text = "User cancelled the prompt.";
-  } else {
-    text = "Hello " + person + "! How is your day going?";
-  }
-  document.getElementById("gamer").innerHTML = text;
-}
-</script> -->
-
-
+ 
+  <script src="apps.js"></script>
 </body>
 </html>
