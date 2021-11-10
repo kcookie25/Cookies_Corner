@@ -13,7 +13,7 @@
     <div class="main">
         <center><img id="banner" src="Images/Cookie's Corner 2.png">
         <div class="text">
-          <h2>Are you in room B210 right now? You say you have nothing to do, right? I beg to differ! Check out what you <u>SHOULD</u> be doing!</h5></center>
+          <h3>Are you in room B210 right now? You say you have nothing to do, right? I beg to differ! Check out what you <u>SHOULD</u> be doing!</h3></center>
         </div>
     </div>
     <br>
@@ -22,8 +22,8 @@
  
       <div class="menu">
         <!--NEED TO DO LATER: Seperate image from div-->
-          <input type= "image" id="image" src="Images/Feeling Post It.png">
-          <div class="emoji">
+          <img id="feeling" src="Images/Feeling Post It.png"/>
+          <div class="emoji" id="emoji" style="display: none">
             <center><p>How are you feeling today?</p>
             <i class="material-icons" style="color: rgb(97, 9, 9)">sentiment_very_dissatisfied</i>
             <i class="material-icons" style="color: rgb(170, 19, 19)">sentiment_dissatisfied</i>
@@ -46,7 +46,7 @@
       <!--GRADE CHECK - Check for current grade, based on percentage-->
       <div class="menu">
         <img id="question2" src="Images/Grade Check Post It.png">
-          <div class="Calculator">
+          <div class="Calculator" id="calculator" style="display:none">
             <center><br>
               <p>Want to know what your current grade is? Enter the current percentage, and I will tell you what grade you have.....</p>
             <input type="text" id="gradeNumber">
@@ -59,29 +59,31 @@
 
       <!--WHAT'S NEXT? Random ideas for what to do next-->
       <div class="menu">
-        <img id="calculator" src="Images/What Next Post It.png">
+        <img id="postit" src="Images/What Next Post It.png">
         <br>
         <br>
         <center>
+        <div id="whatsnext" style="display:none">
         <button onclick="questionOfTheDay()">Click Here</button>
         <h3 id="qotd">&nbsp;</h3>
 
         <p id="gamer"></p>
         </center>
+        </div>
       </div>
     </div>
 
 <!--CHAT BOT - Chat with teacher-->
 <button class="button-open" onclick="openForm()">Chat</button>
     <div class="chat" id="cookieChat">
-      <form action="/action_page.php" class="form-container">
+      <form action="/test.html" target="_blank" class="form-container">
         <h1 id="cookie-chat">Cookie Chat</h1>
-        <img src="Images/cookies_corner2.png" height="75px">
+        <img src="Images/cookies_corner2.png">
         <br>
         <br>
         <label for="msg"><b>Chat Here</b></label>
         <textarea placeholder="Hi Mrs. Cook! I have some questions....." name="msg" required></textarea>
-    
+        <textarea placeholder="another one in here" name="thing" required></textarea>
         <button type="submit" class="button">Send</button>
         <button type="button" class="button button-close" onclick="closeForm()">Close</button>
       </form>

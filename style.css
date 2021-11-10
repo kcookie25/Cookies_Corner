@@ -9,7 +9,8 @@ body{
         height: 200px;
         width: 200px;
 }
-.buttons > div > img {
+
+img { 
     height: 100%
 }
 .text{
@@ -63,7 +64,12 @@ body{
   border: 2px ridge white;
 }
 
-/* Full-width textarea */
+.form-container > img {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .form-container textarea {
   width: 100%;
   padding: 15px;
@@ -73,13 +79,13 @@ body{
   min-height: 100px;
 }
 
-/* When the textarea gets focus, do something */
+
 .form-container textarea:focus {
   background-color: white;
   outline: none;
 }
 
-/* Set a style for the submit/login button */
+
 .form-container .button {
   background-color: #85963b;
   color: white;
@@ -91,12 +97,12 @@ body{
   opacity: 0.8;
 }
 
-/* Add a red background color to the cancel button */
+
 .form-container .button-close {
   background-color: #ff1616;
 }
 
-/* Add some hover effects to buttons */
+
 .form-container .button-send:hover, .button-open:hover {
   opacity: 1;
 }

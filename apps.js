@@ -42,3 +42,17 @@ document.getElementById("cookieChat").style.display = "block";
 function closeForm() {
 document.getElementById("cookieChat").style.display = "none";
 }
+
+document.getElementById("feeling").onclick = function(){
+    document.getElementById("emoji").style.display = "block";
+} 
+
+document.getElementById("question2").onclick = function(){
+    document.getElementById("calculator").style.display = "block";
+} 
+
+document.getElementById("postit").onclick = function(){
+    document.getElementById("whatsnext").style.display = "block";
+} 
+
+
