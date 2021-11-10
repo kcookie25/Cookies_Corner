@@ -16,8 +16,8 @@ img {
 .text{
     background-color: white;
     width: 75%;
-    height: 50px;
 }
+
 .menu{
     padding: 5px;
 }
@@ -31,6 +31,39 @@ img {
 
 #banner{
     width: 50%;
+}
+
+.Calculator{
+  background-color: white;
+  padding: 10px;
+  border-radius: 25px;
+  border: 2px solid #85963b;
+}
+
+.button-grade {
+  background-color: #85963b;
+  color: #f7f4c5;
+  cursor: pointer;
+}
+
+#whatsnext{
+  background-color: white;
+  padding: 25px;
+  border-radius: 25px;
+  border: 2px solid #85963b;
+}
+
+.button-next{
+  background-color: #85963b;
+  color: #f7f4c5;
+  cursor: pointer;
+}
+
+.emoji{
+  background-color: white;
+  padding: 10px;
+  border-radius: 25px;
+  border: 2px solid #85963b;
 }
 
 *{box-sizing: border-box;}
@@ -71,7 +104,7 @@ img {
 }
 
 .form-container textarea {
-  width: 100%;
+  width: 90%;
   padding: 15px;
   margin: 5px 0 20px 0;
   border: none;
@@ -103,12 +136,13 @@ img {
 }
 
 
-.form-container .button-send:hover, .button-open:hover {
+.form-container .button-close:hover, .button:hover {
   opacity: 1;
 }
 #cookie-chat{
   font-family:cursive;
 }
+
 
 @media only screen and (min-width: 720px){
     .buttons{

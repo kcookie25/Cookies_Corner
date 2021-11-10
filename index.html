@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cookie's Corner</title>
+    <title>Cookie's Corner</title>  ...
+
+    <link rel="shortcut icon" type="image/jpg" href="Images/cookie-32.png"/>...
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   </head>
@@ -22,7 +24,7 @@
  
       <div class="menu">
         <!--NEED TO DO LATER: Seperate image from div-->
-          <img id="feeling" src="Images/Feeling Post It.png"/>
+          <img id="feeling" src="Images/Feeling Post It.png" alt="Post it image with the text, How are you feeling today?"/>
           <div class="emoji" id="emoji" style="display: none">
             <center><p>How are you feeling today?</p>
             <i class="material-icons" style="color: rgb(97, 9, 9)">sentiment_very_dissatisfied</i>
@@ -52,7 +54,8 @@
             <input type="text" id="gradeNumber">
             <span id="gradeScale"></span>
             <br>
-            <button onclick="calculateGrade()">What is my grade?</button>
+            <br>
+            <button class ="button-grade" onclick="calculateGrade()">What is my grade?</button>
             </center>
           </div>
       </div>
@@ -60,15 +63,14 @@
       <!--WHAT'S NEXT? Random ideas for what to do next-->
       <div class="menu">
         <img id="postit" src="Images/What Next Post It.png">
-        <br>
-        <br>
-        <center>
         <div id="whatsnext" style="display:none">
-        <button onclick="questionOfTheDay()">Click Here</button>
-        <h3 id="qotd">&nbsp;</h3>
+            <center>
+            <p>Finally finished, right? Check out some ideas for what you can NOW.....</p>
+            <button class="button-next" onclick="questionOfTheDay()">Click Here</button>
+            <h3 id="qotd">&nbsp;</h3>
 
-        <p id="gamer"></p>
-        </center>
+            <p id="gamer"></p>
+            </center>
         </div>
       </div>
     </div>
@@ -83,7 +85,6 @@
         <br>
         <label for="msg"><b>Chat Here</b></label>
         <textarea placeholder="Hi Mrs. Cook! I have some questions....." name="msg" required></textarea>
-        <textarea placeholder="another one in here" name="thing" required></textarea>
         <button type="submit" class="button">Send</button>
         <button type="button" class="button button-close" onclick="closeForm()">Close</button>
       </form>

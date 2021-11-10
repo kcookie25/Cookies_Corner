@@ -9,7 +9,7 @@ let myFirstArray = ["Email a teacher from elementary school, and thank them for 
 //         alert(myFirstArray[i]);
 // }
 
-document.getElementById("qotd").innerText = ("Try this.... " + myFirstArray[Math.floor(Math.random() * myFirstArray.length)] )
+document.getElementById("qotd").innerText = (" " + myFirstArray[Math.floor(Math.random() * myFirstArray.length)] )
 
 
 }
@@ -34,7 +34,7 @@ finalGreeting = "You get an F!"
 document.getElementById("gradeScale").innerHTML = finalGreeting;
 }
 
-//CHAT BOT
+//CHAT BOT (OPEN AND CLOSE FORM OPTIONS)
 function openForm() {
 document.getElementById("cookieChat").style.display = "block";
 }
@@ -43,14 +43,17 @@ function closeForm() {
 document.getElementById("cookieChat").style.display = "none";
 }
 
+//DROP DOWN DISPLAY FOR EMOJIS
 document.getElementById("feeling").onclick = function(){
     document.getElementById("emoji").style.display = "block";
 } 
 
+//DROP DOWN DISPLAY FOR GRADE CALCULATOR
 document.getElementById("question2").onclick = function(){
     document.getElementById("calculator").style.display = "block";
 } 
 
+//DROP DOWN DISPLAY FOR WHAT'S NEXT?
 document.getElementById("postit").onclick = function(){
     document.getElementById("whatsnext").style.display = "block";
 } 
