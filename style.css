@@ -4,23 +4,39 @@ body{
 .buttons{
     display: flex;
     flex-direction: column;
+
 }
 .buttons > div{
-        height: 200px;
-        width: 200px;
+        height: 400px;
+        width: 400px;
+        margin-bottom: 75%;
 }
+
 
 img { 
     height: 100%
 }
+
 .text{
     background-color: white;
-    width: 75%;
+    width: 70%;
+    font-family: 'Amatic SC', cursive;
+    font-size: 200%;
+    margin: auto;
+}
+/* */
+
+.menu {
+    padding: 5px;
+    margin-bottom: 50%;
 }
 
-.menu{
-    padding: 5px;
+.menu p{
+  font-family: 'Amatic SC', cursive;
+  font-size: 150%;
+  font-weight: bold;
 }
+
 .footer {
     text-align: center;
 }
@@ -29,8 +45,12 @@ img {
     transform: rotate(180deg);
 }
 
-#banner{
+#banner1{
     width: 50%;
+}
+
+#banner2{
+  display: none;
 }
 
 .Calculator{
@@ -161,6 +181,15 @@ img {
     .buttons > div{
         height: 350px;
         width: 350px;
+    }
+
+    #banner2{
+      display: block;
+      width: 70%;
+    }
+
+    #banner1{
+      display: none;
     }
     
 }
