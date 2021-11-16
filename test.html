@@ -9,22 +9,12 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   </head>
 <body>
-    
-    <p style="background-color: aliceblue"id="willitwork">&nbsp;</p>
-    
-    <button onclick="coolFunction()">Cool Button</button>
-    <!-- <script>
-        const jabberwocky = new URLSearchParams(location.search);
-        let userInput = "";
-        
-        function coolFunction(){
-            
-            for (const i of jabberwocky.values()) {
-            userInput +=  " " + i;
-            alert(i);
-            }
-            document.getElementById("willitwork").innerHTML = userInput;
-        }
-    </script> -->
+    <div class="wait">
+        <p id="placeholder"></p>
+        <img id="pleasewait" src="Images/please wait.png">
+        <p id="placeholder"></p>
+        <center><button class="button-wait" onclick="coolFunction()">Click here if you forgot your question!</button></center>
+    </div>
+    <script src="apps.js"></script>
 </body>
 </html>

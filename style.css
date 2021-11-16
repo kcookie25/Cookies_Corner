@@ -1,6 +1,7 @@
 body{
     background-image: url(Images/Cork\ Board.png);
 }
+
 .buttons{
     display: flex;
     flex-direction: column;
@@ -17,6 +18,16 @@ img {
     height: 100%
 }
 
+/*BOTH HEADER IMAGES */
+#banner1{
+  width: 50%;
+}
+
+#banner2{
+display: none;
+}
+
+/*MAIN TEXT UNDER HEADER */
 .text{
     background-color: white;
     width: 70%;
@@ -24,8 +35,8 @@ img {
     font-size: 200%;
     margin: auto;
 }
-/* */
 
+/*INCLUDES HEADER IMG AND .TEXT */
 .menu {
     padding: 5px;
     margin-bottom: 50%;
@@ -37,22 +48,20 @@ img {
   font-weight: bold;
 }
 
-.footer {
-    text-align: center;
-}
-
+/* HOW ARE YOU TODAY EMOJIS */
 .material-icons:nth-child(even){
     transform: rotate(180deg);
 }
 
-#banner1{
-    width: 50%;
+.emoji{
+  background-color: white;
+  padding: 10px;
+  border-radius: 25px;
+  border: 2px solid #85963b;
 }
 
-#banner2{
-  display: none;
-}
 
+/*THIS IS ALL GRADE CHECK */
 .Calculator{
   background-color: white;
   padding: 10px;
@@ -66,6 +75,7 @@ img {
   cursor: pointer;
 }
 
+/*THIS IS ALL WHAT'S NEXT */
 #whatsnext{
   background-color: white;
   padding: 25px;
@@ -79,13 +89,8 @@ img {
   cursor: pointer;
 }
 
-.emoji{
-  background-color: white;
-  padding: 10px;
-  border-radius: 25px;
-  border: 2px solid #85963b;
-}
 
+/*CHAT BOT */
 *{box-sizing: border-box;}
 
 .button-open {
@@ -99,6 +104,8 @@ img {
     bottom: 25px;
     right: 30px;
     width: 200px;
+    font-family: 'Amatic SC', cursive;
+    font-size: 150%;
   }
 
 .chat {
@@ -135,7 +142,6 @@ img {
 
 .form-container textarea:focus {
   background-color: white;
-  outline: none;
 }
 
 
@@ -148,6 +154,8 @@ img {
   width: 100%;
   margin-bottom:10px;
   opacity: 0.8;
+  font-family: 'Amatic SC', cursive;
+  font-size: 150%;
 }
 
 
@@ -156,21 +164,54 @@ img {
 }
 
 
-.form-container .button-close:hover, .button:hover {
+.form-container .button-close:hover, .button:hover, .button-wait:hover {
   opacity: 1;
 }
 #cookie-chat{
-  font-family:cursive;
+  font-family: 'Amatic SC', cursive;
+  font-size: 250%;
 }
 
 
+/*THIS INFORMATION IS FOR TEST.HTML */
+#pleasewait{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 50%;
+  width: 50%;
+}
+
+#placeholder{
+  height: 25px;
+  width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.button-wait{
+    background-color: #85963b;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 25%;
+    margin-bottom:10px;
+    opacity: 0.8;
+    font-family: 'Amatic SC', cursive;
+    font-size: 100%;
+}
+
+
+/*MEDIA QUERY INFORMATION FOR MEDIUM AND LARGE SCREEN */
 @media only screen and (min-width: 720px){
     .buttons{
         display: grid;
         grid-template-columns: auto auto;
         justify-content: center;
     }
-    
+
 }
 @media only screen and (min-width: 980px){
     .buttons{

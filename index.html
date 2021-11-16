@@ -13,7 +13,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
   </head>
-<body>
+
+
+  <body>
     
     <div class="main">
         <center><img id="banner1" src="Images/small-logo.png"> <img id="banner2" src="Images/Cookie's Corner 2.png">
@@ -24,9 +26,9 @@
     <br>
 
     <div class="buttons">
- 
+      
+<!--HOW ARE YOU FEELING TODAY - Emojis --> 
       <div class="menu">
-        <!--NEED TO DO LATER: Seperate image from div-->
           <img id="feeling" src="Images/Feeling Post It.png" alt="Post it image with the text, How are you feeling today?"/>
           <div class="emoji" id="emoji" style="display: none">
             <center><p>How are you feeling today?</p>
@@ -40,15 +42,14 @@
           </div>
       </div>
 
-      <!--POWERSCHOOL - Check for missing assignments-->
+<!--POWERSCHOOL - Check for missing assignments-->
       <div class="menu">
-        <!--This LINK is changing my image settings, and I don't know why?!?!?-->
         <a href="https://pschool.gcs.k12.in.us/public/" target="_blank">
           <img src="Images/Powerschool Post It.png">
         </a>
       </div>
       
-      <!--GRADE CHECK - Check for current grade, based on percentage-->
+<!--GRADE CHECK - Check for current grade, based on percentage-->
       <div class="menu">
         <img id="question2" src="Images/Grade Check Post It.png">
           <div class="Calculator" id="calculator" style="display:none">
@@ -63,7 +64,7 @@
           </div>
       </div>
 
-      <!--WHAT'S NEXT? Random ideas for what to do next-->
+<!--WHAT'S NEXT? Random ideas for what to do next-->
       <div class="menu">
         <img id="postit" src="Images/What Next Post It.png">
         <div id="whatsnext" style="display:none">
@@ -86,7 +87,7 @@
         <img src="Images/cookies_corner2.png">
         <br>
         <br>
-        <label for="msg"><b>Chat Here</b></label>
+        <label for="msg" style="font-family: 'Amatic SC', cursive; font-size: 150%"><b>Chat Here</b></label>
         <textarea placeholder="Hi Mrs. Cook! I have some questions....." name="msg" required></textarea>
         <button type="submit" class="button">Send</button>
         <button type="button" class="button button-close" onclick="closeForm()">Close</button>

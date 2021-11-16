@@ -4,10 +4,12 @@ let myFirstArray = ["Email a teacher from elementary school, and thank them for 
 "Check and see if another student in the class needs help with a subject you are strong in", 
 "Go to CodeHS, and create a new program in the Sandbox", 
 "Find a recipe, and offer to cook for your parents tonight (No, something other than hotdogs and peanut butter and jelly!)", 
-"Question 6", "Question 7", "Question 8", "Question 9", "Question 10"]
-// for(var i = 0; i< myFirstArray.length;i++){
-//         alert(myFirstArray[i]);
-// }
+"Learn a new skill by watching a tutorial on Youtube", 
+"Read a book.  I have some, if you need a suggestion.", 
+"Question 7", 
+"Question 8", 
+"Question 9", 
+"Question 10"]
 
 document.getElementById("qotd").innerText = (" " + myFirstArray[Math.floor(Math.random() * myFirstArray.length)] )
 
@@ -57,5 +59,19 @@ document.getElementById("question2").onclick = function(){
 document.getElementById("postit").onclick = function(){
     document.getElementById("whatsnext").style.display = "block";
 } 
+
+//ALERT BOX FOR DID YOU FORGET YOUR QUESTION BUTTON
+const jabberwocky = new URLSearchParams(location.search);
+let userInput = "";
+        
+    function coolFunction(){
+            
+        for (const i of jabberwocky.values()) {
+            userInput +=  " " + i;
+            alert(i);
+        }
+        document.getElementById("willitwork").innerHTML = userInput;
+    }
+
 
 
