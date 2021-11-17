@@ -2,20 +2,19 @@ body{
     background-image: url(Images/Cork\ Board.png);
 }
 
+/*ALL ELEMENTS WITHIN BUTTONS DIV BELOW */
 .buttons{
     display: flex;
     flex-direction: column;
 
 }
 .buttons > div{
-        height: 400px;
-        width: 400px;
-        margin-bottom: 75%;
+    margin-bottom: 20px;
 }
 
-
-img { 
-    height: 100%
+.buttons img{
+  height: 300px;
+  width: 300px;
 }
 
 /*BOTH HEADER IMAGES */
@@ -27,7 +26,7 @@ img {
 display: none;
 }
 
-/*MAIN TEXT UNDER HEADER */
+/*INCLUDES HEADER IMG, .TEXT, AND .MENU */
 .text{
     background-color: white;
     width: 70%;
@@ -36,7 +35,6 @@ display: none;
     margin: auto;
 }
 
-/*INCLUDES HEADER IMG AND .TEXT */
 .menu {
     padding: 5px;
     margin-bottom: 50%;
@@ -48,6 +46,7 @@ display: none;
   font-weight: bold;
 }
 
+
 /* HOW ARE YOU TODAY EMOJIS */
 .material-icons:nth-child(even){
     transform: rotate(180deg);
@@ -58,15 +57,17 @@ display: none;
   padding: 10px;
   border-radius: 25px;
   border: 2px solid #85963b;
+  width: 300px;
 }
 
 
-/*THIS IS ALL GRADE CHECK */
+/*THIS IS ALL GRADE CHECK AND ITS BUTTON */
 .Calculator{
   background-color: white;
   padding: 10px;
   border-radius: 25px;
   border: 2px solid #85963b;
+  width: 300px;
 }
 
 .button-grade {
@@ -75,12 +76,13 @@ display: none;
   cursor: pointer;
 }
 
-/*THIS IS ALL WHAT'S NEXT */
+/*THIS IS ALL WHAT'S NEXT AND ITS BUTTON*/
 #whatsnext{
   background-color: white;
   padding: 25px;
   border-radius: 25px;
   border: 2px solid #85963b;
+  width: 300px;
 }
 
 .button-next{
@@ -90,7 +92,7 @@ display: none;
 }
 
 
-/*CHAT BOT */
+/*ALL CHAT BOT */
 *{box-sizing: border-box;}
 
 .button-open {
@@ -117,20 +119,20 @@ display: none;
   z-index: 9;
 }
 
-.form-container {
+.form-con {
   max-width: 225px;
   padding: 15px;
   background-color: #f7f4c5;
   border: 2px ridge white;
 }
 
-.form-container > img {
+.form-con > img {
   max-width: 100%;
   margin-left: auto;
   margin-right: auto;
 }
 
-.form-container textarea {
+.form-con textarea {
   width: 90%;
   padding: 15px;
   margin: 5px 0 20px 0;
@@ -140,12 +142,12 @@ display: none;
 }
 
 
-.form-container textarea:focus {
+.form-con textarea:focus {
   background-color: white;
 }
 
 
-.form-container .button {
+.form-con .button {
   background-color: #85963b;
   color: white;
   padding: 16px 20px;
@@ -159,27 +161,28 @@ display: none;
 }
 
 
-.form-container .button-close {
+.form-con .button-close {
   background-color: #ff1616;
 }
 
 
-.form-container .button-close:hover, .button:hover, .button-wait:hover {
+.form-cont .button-close:hover, .button:hover, .button-wait:hover {
   opacity: 1;
 }
+
 #cookie-chat{
   font-family: 'Amatic SC', cursive;
   font-size: 250%;
 }
 
 
-/*THIS INFORMATION IS FOR TEST.HTML */
+/*THIS INFORMATION IS FOR ENTIRE TEST.HTML */
 #pleasewait{
   display: block;
   margin-left: auto;
   margin-right: auto;
-  height: 50%;
-  width: 50%;
+  height: 25%;
+  width: 25%;
 }
 
 #placeholder{
@@ -219,11 +222,12 @@ display: none;
         flex-direction: row;
         justify-content: center;
     }
-    .buttons > div{
-        height: 350px;
-        width: 350px;
-    }
 
+    .buttons img{
+       height: 300px;
+       width: 300px;
+  }
+  
     #banner2{
       display: block;
       width: 70%;

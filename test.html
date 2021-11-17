@@ -9,12 +9,27 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   </head>
 <body>
+<!--PLEASE WAIT IMAGE AND BUTTON--> 
     <div class="wait">
         <p id="placeholder"></p>
         <img id="pleasewait" src="Images/please wait.png">
         <p id="placeholder"></p>
         <center><button class="button-wait" onclick="coolFunction()">Click here if you forgot your question!</button></center>
     </div>
-    <script src="apps.js"></script>
+
+<!--SCRIPT PASSES PARAMETERS FROM FORM THROUGH URL TO ALERT POP UP--> 
+    <script>
+    const jabberwocky = new URLSearchParams(location.search);
+    let userInput = "";
+        
+        function coolFunction(){
+                
+            for (const i of jabberwocky.values()) {
+                userInput +=  " " + i;
+                alert(i);
+            }
+            document.getElementById("willitwork").innerHTML = userInput;
+        }
+    </script>
 </body>
 </html>

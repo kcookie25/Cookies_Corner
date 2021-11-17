@@ -16,7 +16,7 @@
 
 
   <body>
-    
+<!--HEADER AND MAIN TEXT -->    
     <div class="main">
         <center><img id="banner1" src="Images/small-logo.png"> <img id="banner2" src="Images/Cookie's Corner 2.png">
         <div class="text">
@@ -52,7 +52,7 @@
 <!--GRADE CHECK - Check for current grade, based on percentage-->
       <div class="menu">
         <img id="question2" src="Images/Grade Check Post It.png">
-          <div class="Calculator" id="calculator" style="display:none">
+          <div class="Calculator" id="calculator" style="display:none;">
             <center><br>
               <p>Want to know what your current grade is? Enter the current percentage, and I will tell you what grade you have.....</p>
             <input type="text" id="gradeNumber">
@@ -67,7 +67,7 @@
 <!--WHAT'S NEXT? Random ideas for what to do next-->
       <div class="menu">
         <img id="postit" src="Images/What Next Post It.png">
-        <div id="whatsnext" style="display:none">
+        <div id="whatsnext" style="display:none;">
             <center>
             <p>Finally finished, right? Check out some ideas for what you can NOW.....</p>
             <button class="button-next" onclick="questionOfTheDay()">Click Here</button>
@@ -82,7 +82,7 @@
 <!--CHAT BOT - Chat with teacher-->
 <button class="button-open" onclick="openForm()">Chat</button>
     <div class="chat" id="cookieChat">
-      <form action="/test.html" target="_blank" class="form-container">
+      <form action="/test.html" target="_blank" class="form-con">
         <h1 id="cookie-chat">Cookie Chat</h1>
         <img src="Images/cookies_corner2.png">
         <br>
@@ -93,7 +93,6 @@
         <button type="button" class="button button-close" onclick="closeForm()">Close</button>
       </form>
     </div>
-  <!--Question of the Day script-->
  
   <script src="apps.js"></script>
 </body>

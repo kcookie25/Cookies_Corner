@@ -6,10 +6,10 @@ let myFirstArray = ["Email a teacher from elementary school, and thank them for 
 "Find a recipe, and offer to cook for your parents tonight (No, something other than hotdogs and peanut butter and jelly!)", 
 "Learn a new skill by watching a tutorial on Youtube", 
 "Read a book.  I have some, if you need a suggestion.", 
-"Question 7", 
-"Question 8", 
-"Question 9", 
-"Question 10"]
+"Read or listen to a credible news story (Student News Daily or NewsELA are great starting points!)", 
+"Build a webpage review of your favorite movie or tv show", 
+"Get some exercise! (Give me 20! or power walk up and down the hallway) Let me know before you start", 
+"Ask me to teach you to crochet! I have plenty of extra yarn and needles.  Yes, you will love it."]
 
 document.getElementById("qotd").innerText = (" " + myFirstArray[Math.floor(Math.random() * myFirstArray.length)] )
 
@@ -20,8 +20,10 @@ document.getElementById("qotd").innerText = (" " + myFirstArray[Math.floor(Math.
 function calculateGrade(){
 let grade= document.getElementById("gradeNumber").value;
 let finalGreeting;
-
-if (grade > 89) {
+if (grade == "" || grade > 100){
+    finalGreeting = "Please input a number between 0 and 100";
+}
+else if (grade > 89) {
 finalGreeting = "You get an A";
 } else if (grade > 79 && grade < 90) {
 finalGreeting = "You get a B!";
@@ -60,18 +62,8 @@ document.getElementById("postit").onclick = function(){
     document.getElementById("whatsnext").style.display = "block";
 } 
 
-//ALERT BOX FOR DID YOU FORGET YOUR QUESTION BUTTON
-const jabberwocky = new URLSearchParams(location.search);
-let userInput = "";
-        
-    function coolFunction(){
-            
-        for (const i of jabberwocky.values()) {
-            userInput +=  " " + i;
-            alert(i);
-        }
-        document.getElementById("willitwork").innerHTML = userInput;
-    }
+
+
 
 
 
