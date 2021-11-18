@@ -1,6 +1,6 @@
 function questionOfTheDay(){
 let myFirstArray = ["Email a teacher from elementary school, and thank them for all the hard work they did to help you be the person you are today", 
-"Ask your teacher if they need help with anything around the classroom", 
+"Ask me if I need help with anything around the classroom (I am sure I do....)", 
 "Check and see if another student in the class needs help with a subject you are strong in", 
 "Go to CodeHS, and create a new program in the Sandbox", 
 "Find a recipe, and offer to cook for your parents tonight (No, something other than hotdogs and peanut butter and jelly!)", 
